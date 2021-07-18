@@ -1,0 +1,30 @@
+.inputSearchWrapper {
+  margin-bottom: 16px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url('../../assets/images/search.svg');
+    width: 16px;
+    height: 16px;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.inputSearch {
+  padding: 13px 40px;
+  border: 1px solid #dee5eb;
+  outline: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7b8395;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+  width: 100%;
+  background: rgba(240, 242, 244, 0.5);
+}

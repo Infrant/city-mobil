@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.loaderWrapper {
+  display: flex;
+  height: 100vh;
+}
+.loader {
+  margin: auto;
+}
+
+.tableWrapper {
+  padding: 32px 40px;
+}
+.tableRowCellHover:hover {
+  background-color: darken(#fff, 5%);
+  cursor: pointer;
+}

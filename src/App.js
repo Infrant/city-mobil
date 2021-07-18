@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { CircularProgress } from '@material-ui/core';
+import './App.scss';
+import FilterContainer from './Components/Filter/FilterContainer';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import PaginatorContainer from './Components/Paginator/PaginatorContainer';
+import Sidebar from './Components/Sidebar/Sidebar';
+import TableContainer from './Components/Table/TableContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = ({ isInitialized }) => {
+  return !isInitialized ? (
+    <div className='loaderWrapper'>
+      <CircularProgress className='loader' />
     </div>
+  ) : (
+    <>
+      <Header />
+      <div className='container'>
+        <Sidebar />
+        <div className='tableWrapper'>
+          <FilterContainer />
+          <PaginatorContainer />
+          <TableContainer />
+        </div>
+      </div>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

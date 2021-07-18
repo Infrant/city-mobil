@@ -1,0 +1,76 @@
+.table {
+  margin-bottom: 16px;
+}
+
+.tableRowHeading {
+  display: grid;
+  grid-template-columns: 2fr repeat(7, 1fr);
+
+  &Sort {
+    background: url('../../assets/images/arrowSort.svg');
+    width: 11.67px;
+    height: 14.17px;
+    opacity: 30%;
+    transition-duration: 0.4s;
+
+    &Ascending {
+      transform: rotate(180deg);
+    }
+
+    &Visible {
+      opacity: 100%;
+    }
+  }
+
+  &Cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7b8395;
+    border: 1px solid #dee5eb;
+    padding: 16px;
+    background: rgba(240, 242, 244, 0.5);
+    margin: -1px -1px 0 0;
+
+    &:first-child {
+      justify-content: space-evenly;
+
+      &:hover {
+        cursor: pointer;
+        background-color: darken(rgba(240, 242, 244, 0.5), 10%);
+      }
+    }
+  }
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr repeat(7, 1fr);
+
+  &Cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px 16px;
+    border: 1px solid #dee5eb;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1f232e;
+    margin: -1px -1px 0 0;
+  }
+}
+
+.choosenCar {
+  background: rgba(240, 242, 244, 0.5);
+  border: 1px solid #dee5eb;
+  padding: 13px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7b8395;
+}

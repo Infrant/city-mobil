@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid #dee5eb;
+  height: 128px;
+  background: #f2f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &Text {
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 36px;
+    color: #707070;
+  }
+}
