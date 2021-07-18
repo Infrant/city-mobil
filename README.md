@@ -1,4 +1,8 @@
-# SPA Messenger
+# Dynamic Table
+
+Project setup:
+
+### `npm install`
 
 In the project directory, you can run:
 
